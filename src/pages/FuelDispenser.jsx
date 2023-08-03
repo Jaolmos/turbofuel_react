@@ -3,6 +3,9 @@ import ImageCar from "../assets/img/bluecar.png";
 import { useNavigate } from "react-router-dom";
 
 export default function FuelDispenser() {
+
+  const navigate = useNavigate()
+
   const dispensers = [
     {
       id: 1,
@@ -30,6 +33,11 @@ export default function FuelDispenser() {
     },
   ];
 
+  const clickDispenser = (id) => {
+    localStorage.setItem("dispenser", id)
+    navigate("/product")
+  }
+
   return (
     <>
       <Heading textAlign="center" marginBottom={5}>
@@ -53,8 +61,11 @@ export default function FuelDispenser() {
               color: "#fff",
               shadow: "2xl",
             }}
+            onClick={() => clickDispenser(dispenser.id)}
           >
-            <Heading size="lg" mb={3}>{dispenser.name} </Heading>
+            <Heading size="lg" mb={3}>
+              {dispenser.name}{" "}
+            </Heading>
             <Image
               src={ImageCar}
               alt={dispenser.name}

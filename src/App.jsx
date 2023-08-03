@@ -14,7 +14,7 @@ function App() {
   return (
     <Box>
       <Navbar />
-      <Container>
+      <Container padding={10}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/fuel-dispenser" element={<FuelDispenser />} />
