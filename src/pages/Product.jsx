@@ -55,7 +55,7 @@ export default function Product() {
         {fuelType.map((fuel, index) => (
           <GridItem
             key={index}
-            padding="5"
+            padding="3"
             borderRadius="10"
             w="100%"
             cursor="pointer"
@@ -95,6 +95,7 @@ export default function Product() {
           </GridItem>
         ))}
       </Grid>
+
       <Box marginTop="40px">
         <Stack
           direction="row"
@@ -107,7 +108,7 @@ export default function Product() {
             colorScheme="teal"
             variant="outline"
           >
-            Back to Fuel Dispenser
+            Go Back
           </Button>
         </Stack>
       </Box>
