@@ -25,7 +25,7 @@ export default function Quantity() {
   return (
     <>
       <Grid marginBottom={5}>
-        <Heading size="lg">Select the quantity</Heading>
+        <Heading size="lg">Select the quantity of liters</Heading>
         <Heading size="lg" fontWeight={800}>
           {counter? <>{counter} €</> : <>0</>}
         </Heading>
