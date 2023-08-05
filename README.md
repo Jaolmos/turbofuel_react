@@ -1,4 +1,6 @@
-# React + Vite
+# Turbo Fuel. React + Vite
+
+Basic app to refuel at a gas station built with React
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
